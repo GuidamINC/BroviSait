@@ -1,10 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import BroviHeader from "@/components/Header.vue"
+import BroviHero from "@/components/Hero.vue"
+import BroviServices from "@/components/Services.vue"
+</script>
 
 <template>
-  <h1>You did it!</h1>
+  <BroviHeader></BroviHeader>
+  <BroviHero></BroviHero>
+  <BroviServices></BroviServices>
+  <h1>Тест 123!</h1>
   <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
+    Брови
   </p>
 </template>
 
