@@ -131,6 +131,7 @@ footer {
 .footer-col li {
   font-size: 14px;
   line-height: 1.5;
+  color: #838383; 
 }
 
 .footer-col a { 
