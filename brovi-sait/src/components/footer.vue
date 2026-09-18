@@ -1,62 +1,58 @@
 <script setup>
-const brand_name = "DOG"
-const work_time = "Пн-Вс 10:00-20:00"
-const phone_number = "8-999-999-99-99"
-const phone_number_raw = "89999999999"
-const branch_address = "г.Чебоксары ул.БезымяннаяВысота дом 3, 1 этаж"
-const email = "ivanov_pupkin@gmail.ru" 
-
+import* as glb from "../globals.ts"
 </script>
 
 <template>
   <footer>
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="#" class="logo">{{brand_name}}</a>
-        <p>Краткое описание салона</p>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">{{ glb.brand_name }}</a>
+          <p>Краткое описание салона</p>
+        </div>
+        <div class="footer-col">
+          <h5>Навигация</h5>
+          <ul>
+            <li><a href="#about_author">Об основателе</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#works">Наши работы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col contacts-col">
+          <h5>Контакты</h5>
+          <ul>
+            <li><a :href="`tel:${glb.phone_number_raw}`">{{ glb.phone_number }}</a></li>
+            <li><a :href="`mailto:${glb.email}`">{{ glb.email }}</a></li>
+            <li>
+              <div class="socials">
+                <a href="instagram" aria-label="Instagram">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                </a>
+                <a href="telegram" aria-label="Telegram">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="whatsApp" aria-label="WhatsApp">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.4 8.4 0 01-12.3 7.5L3 21l2-5.4A8.4 8.4 0 1121 11.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </li>
+            <li>{{ glb.branch_address }}</li>
+            <li>{{ glb.work_time }}</li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-col">
-        <h5>Навигация</h5>
-        <ul>
-          <li><a href="#about_author">Об основателе</a></li>
-          <li><a href="#services">Услуги</a></li>
-          <li><a href="#works">Наши работы</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-        </ul>
-      </div>
-      <div class="footer-col contacts-col">
-        <h5>Контакты</h5>
-        <ul>
-          <li><a href="tel:{{phone_number_raw}}">{{phone_number}}</a></li>
-          <li><a href="mailto:{{email}}">{{email}}</a></li>
-          <div class="socials">
-        <a href="instagram" aria-label="Instagram">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-        </a>
-        <a href="telegram" aria-label="Telegram">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="whatsApp" aria-label="WhatsApp">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.4 8.4 0 01-12.3 7.5L3 21l2-5.4A8.4 8.4 0 1121 11.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
-          <li>{{branch_address}}</li>
-          <li>{{work_time}}</li>
-        </ul>
-        
-      </div>
-    </div>
 
-    <div class="footer-bottom">
-      <div>© 2026 {{brand_name }}. Все права защищены.</div>
-      
+      <div class="footer-bottom">
+        <div>© 2026 {{ glb.brand_name }}. Все права защищены.</div>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 </template>
 
+
 <style scoped>
+
 .container {
   max-width: 1240px;
   margin: 0 auto;
@@ -69,6 +65,7 @@ footer {
   padding: 80px 0 40px;
   background-color: #1F272E;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 .footer-top {
@@ -79,6 +76,7 @@ footer {
   padding-bottom: 20px;
   border-bottom: #F1ECE9 solid 1px;
   border-radius: 10px;
+  flex-wrap: wrap;
 }
 
 .footer-col {
@@ -91,6 +89,7 @@ footer {
   flex: 1;
   padding: 24px;
   text-align: center;
+  
 }
 
 .footer-brand .logo {
@@ -101,6 +100,7 @@ footer {
   margin-bottom: 20px;
   text-decoration: none;
   font-family: 'Playfair Display', Georgia, serif;
+  text-shadow: 3px 3px 3px black;
 }
 
 .footer-brand p {
