@@ -2,16 +2,14 @@
 import BroviHeader from "@/components/Header.vue"
 import BroviHero from "@/components/Hero.vue"
 import BroviServices from "@/components/Services.vue"
+import BroviAbout from "@/components/About.vue"
 </script>
 
 <template>
   <BroviHeader></BroviHeader>
   <BroviHero></BroviHero>
   <BroviServices></BroviServices>
-  <h1>Тест 123!</h1>
-  <p>
-    Брови
-  </p>
+  <BroviAbout></BroviAbout>
 </template>
 
 <style scoped></style>

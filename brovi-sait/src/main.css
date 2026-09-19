@@ -3,4 +3,12 @@ html,body {
     padding: 0;
     scroll-behavior: smooth;
     background-color: #F1ECE9;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1240px;
+    padding: 0 32px;
+    margin: 0 auto;
 }
