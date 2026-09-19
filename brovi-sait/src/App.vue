@@ -3,6 +3,9 @@ import BroviHeader from "@/components/Header.vue"
 import BroviHero from "@/components/Hero.vue"
 import BroviServices from "@/components/Services.vue"
 import BroviAbout from "@/components/About.vue"
+import fooooter from './components/footer.vue'
+import contactts from './components/contacts.vue'
+import workks from './components/works.vue'
 </script>
 
 <template>
@@ -10,6 +13,9 @@ import BroviAbout from "@/components/About.vue"
   <BroviHero></BroviHero>
   <BroviServices></BroviServices>
   <BroviAbout></BroviAbout>
+  <workks />
+  <contactts />
+  <fooooter />
 </template>
 
 <style scoped></style>
