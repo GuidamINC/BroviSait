@@ -46,6 +46,7 @@ import * as Globals from "@/globals"
     font-weight:400;
     text-decoration: none;
     color: #ffb587;
+    text-shadow: 3px 3px 3px black;
 }
 
 

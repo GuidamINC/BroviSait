@@ -93,6 +93,7 @@ footer {
 }
 
 .footer-brand .logo {
+  font-style: italic;
   display: block;
   color: #F1ECE9;
   font-size: 28px;

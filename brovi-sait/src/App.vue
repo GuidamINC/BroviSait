@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import BroviHeader from "@/components/Header.vue"
 import BroviHero from "@/components/Hero.vue"
 import BroviServices from "@/components/Services.vue"
