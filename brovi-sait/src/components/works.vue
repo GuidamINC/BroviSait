@@ -18,7 +18,7 @@ onMounted(() => {
     return
   }
 
-  const slideWidth = () => slides[0].offsetWidth
+  const slideWidth  = () => slides[0].offsetWidth
 
   // Генерация точек
   const dots: HTMLButtonElement[] = []

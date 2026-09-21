@@ -11,10 +11,10 @@ import * as Globals from "@/globals"
             <div class = "nav-list">
                 <a class = "s-a" href = "#services">{{ Globals.services_name }}</a>
                 <a class = "s-a" href = "#about">{{ Globals.about_name }}</a>
-                <a class = "s-a" href = "#hero">{{ Globals.gallery_name }}</a>
-                <a class = "s-a" href = "#hero">{{ Globals.contacts_name }}</a>
+                <a class = "s-a" href = "#works">{{ Globals.gallery_name }}</a>
+                <a class = "s-a" href = "#contacts">{{ Globals.contacts_name }}</a>
             </div>
-            <a class = "contacts-button" href= "#hero">{{Globals.contacts_button_text}}</a>
+            <a class = "contacts-button" href= "#contacts">{{Globals.contacts_button_text}}</a>
         </header>
     </nav>
 </template>

@@ -60,7 +60,9 @@
     overflow: hidden;
     position: relative;
     aspect-ratio: 4/5;
-    background-color: black;
+    background-color: #F1ECE9;
+    border: 5px solid black;
+    
     border-radius: 32px;
 }
 
@@ -158,6 +160,12 @@
 
 .services-hyperlink:hover{
     color: #bd6750;
+}
+
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 32px;
 }
 
 @media (max-width: 1024px){

@@ -13,7 +13,7 @@ import* as glb from "../globals.ts"
         <div class="footer-col">
           <h5>Навигация</h5>
           <ul>
-            <li><a href="#about_author">Об основателе</a></li>
+            <li><a href="#about">Об основателе</a></li>
             <li><a href="#services">Услуги</a></li>
             <li><a href="#works">Наши работы</a></li>
             <li><a href="#contacts">Контакты</a></li>
